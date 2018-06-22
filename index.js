@@ -26,7 +26,9 @@ let app = express();
 mongoose.connect('mongodb://admin:willibemen13@ds163610.mlab.com:63610/jurassic-pass', {}).then(
   () => {
     // création du port
-    app.listen('1407', (err) => {
+
+    let port = process.env.PORT || 1407;
+    app.listen(port, (err) => {
       if (err) {
         console.log('Connection to the server failed');
       } else {
