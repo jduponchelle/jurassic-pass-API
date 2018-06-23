@@ -9,7 +9,7 @@ import product from './product-schema';
       console.log('Database OK')
     } else {
       product.create({
-        imagePath: 'http://localhost:3000/docs/pass-1.png',
+        imagePath: '/wwww/docs/pass-1.png',
         title: '1 day pass',
         description: 'This pass alows you to enter Jurassic Park during an entire day.',
         price: 300
